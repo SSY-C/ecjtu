@@ -733,9 +733,13 @@ div.nav .navMainContent{width:1180px;}
 function CheckLogin(){
 	var m=document.getElementById("Acct");
 	var p=document.getElementById("Pwd");
-	if((m.value=="admin")&&(p.value=="admin")){
+	if((m.value=="admin")&&(p.value=="admin"))
+	{
 		window.location="http://localhost/index.html";
-		}
+	}
+	else{
+		confirm("账户或密码错误！");
+	}
     return false;
 	
 }
